@@ -81,6 +81,7 @@ footer p {
 
 i {
     padding: 10px;
+    color: var(--colorPrimario);
 }
 
 .menu_item {
