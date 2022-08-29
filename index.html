@@ -1,41 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/b07d835587.js" crossorigin="anonymous"></script>
-    <title>Manos a la Obra</title>
+    <title>Proyecto Codo a Codo</title>
 </head>
+
 <body>
-    <header style="background-color: violet;">
-        <br>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="somos.html">Quienes Somos</a>
-            <a href="productos.html">Nuetros Productos</a>
-        </nav>
-        <br>
+    <header>
+        <img src="img/hero.jpg" alt="Banner Principal Sensacrom">
     </header>
-    <main>
-        <h1 style="text-align: center;">Arte en Cerámica, Lana<br>y Lienzo con Amor</h1>
-        <h2 style="text-align: center;">Manos a la Obra</h2>
-        <img src="img/hero.jpg" alt="Cuenco grande de cerámica" width="500">
-        <p style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptatum minima deserunt, dolorum iste similique molestias neque quos magni odit tenetur alias veniam, facilis iure illum aspernatur? Corrupti consequatur excepturi ipsa laborum similique sequi, magnam eaque vero et, fugiat voluptatum commodi at nam assumenda odio doloribus asperiores hic repudiandae delectus odit vel ea harum. Nobis, itaque placeat. Iste molestias temporibus fugit eaque omnis, aspernatur quasi. Sed inventore deserunt reiciendis quis, animi accusantium provident nulla optio culpa voluptatibus architecto unde odio, suscipit assumenda illum ex minus ad enim facere nemo aut veniam numquam alias? Reiciendis, nulla unde quis molestias vel incidunt!</p>
-        <br>
-        <a href="ceramica.html">Sobre Cerámica</a>
-        <br>
-    </main>
+    <nav>
+        <ul>
+            <li class="menu_item"><a href="">Home</a></li>
+            <li class="menu_item"><a href="nuestro.html">Nuestro Logo</a></li>
+            <li class="menu_item"><a href="">Nuestras Redes</a></li>
+            <li class="menu_item"><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section>
+            <article>
+                <h2>Introducción</h2>
+                <p>Somos una marca orientada a brindar diagnósticos y soluciones
+                    gráficas y fotográficas. Somos metódicos, organizados
+                    y rápidos, con un estilo visual inspirado en la señalética,
+                    que busca a traer a potenciales clientes interesados en asesoramiento
+                    y soluciones gráficas.
+                    Apuntamos a una audiencia madura y de nivel adquisitivo
+                    medio-alto, interesados en formar su propia marca o que se
+                    encuentren en búsqueda invertir en su identidad visual.
+                    Nuestro trato pretende ser Formal, Conciso y Amable. La intensión
+                    final de nuestra comunicación visual y verbal pretende
+                    que nuestro cliente se sienta acompañado y motivado en
+                    la creación o renovación de la identidad visual de su marca.</p>
+            </article>
+            <article>
+                <h2>Color</h2>
+                <p>A continuación se proveerá la información sobre los colores
+                    marcarios. Estos mismos responde a generar la identidad
+                    visual de la marca y deben ser respetados para la correcta difusión
+                    del contenido comunicacional en todas las piezas que
+                    acompañen a la marca.</p>
+            </article>
+            <article>
+                <h2>Muchas Gracias</h2>
+                <p>¡Hemos concluido el recorrido! Espero
+                    les haya resultado tan ameno la lectura
+                    y visualizacion de nuestro proyecto.
+                    Para mas informacion pueden visitar
+                    nuestro Behance donde estaremos
+                    publicando mas contenido.
+                    Saludos atentamente
+                    Nazareno Azul Garibaldi</p>
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h3>Contacto</h3>
+            <form action="" target="_blank">
 
-    <footer style="background-color: violet; text-align: center;">
-        <br>
-        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-        <br>
-        <p>&copy; Manos a la Obra 2022</p>
-        <br>
+                <fieldset>
 
+                    <!-- Ingreso del nombre -->
+                    <label for="nombre">Nombre: </label>
+                    <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui...">
+                    <br><br>
+
+                    <!-- Ingreso del apellido -->
+                    <label for="apellido">Apellido: </label>
+                    <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui...">
+                    <br><br>
+
+                    <!-- Ingreso de la dirección de correo-->
+                    <label for="email">Correo: </label>
+                    <input type="email" name="email">
+                    <br><br>
+
+                    <!-- Comentario -->
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea name="comentario" id="comentario" cols="40" rows="3"></textarea>
+                </fieldset>
+                <br>
+
+                <!-- Botones para controlar el formulario -->
+                <br><br>
+                <input type="reset" value="Borrar formulario">
+                <input type="submit" value="Enviar datos">
+            </form>
+        </aside>
+    </div>
+    <footer>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-behance"></i>
+        <p>&copy; Sensacrom, todos los derechos reservados.<br>Desarrollado por Germán Dolagaray 2022.</p>
     </footer>
 </body>
+
 </html>

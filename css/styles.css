@@ -1,0 +1,95 @@
+/* Globales */
+:root {
+    --colorPrimario: rgb(252, 202, 047);
+    --colorOscuro: rgb(040, 033, 035);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+    font-weight: 300;
+}
+
+header img {
+    width: 100vw;
+    max-height: 40vw;
+}
+
+nav {
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    background-color: var(--colorOscuro);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorPrimario);
+}
+
+article {
+    width: 65%;
+    height: 100%;
+    float: left;
+    display: block;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+    background-color: var(--colorPrimario);
+}
+
+aside {
+    width: 35%;
+    height: 100%;
+    float: right;
+    display: block;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+    color: beige;
+    background-color: rgb(20, 8, 122);
+}
+
+section {
+    padding-right: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    display: block;
+    color: var(--colorPrimario);
+    background-color: var(--colorOscuro);
+}
+
+footer p {
+    text-align: center;
+    font-size: small;
+
+}
+
+i {
+    padding: 10px;
+}
+
+.menu_item {
+    float: left;
+    padding: 5px;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
