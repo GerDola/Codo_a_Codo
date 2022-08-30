@@ -5,8 +5,6 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -24,23 +22,39 @@ p {
     font-weight: 300;
 }
 
+header {
+    margin: 0%;
+    padding: 0%;
+    border-radius: 10px;
+}
+
 header img {
     width: 100vw;
     max-height: 40vw;
-
 }
 
 nav {
     width: 100vw;
-    padding: 5px;
     height: 40px;
+    border-radius: 10px;
     background-color: var(--colorOscuro);
 }
 
-a {
+nav a {
+    padding: 60px;
     text-decoration: none;
     font-weight: 700;
     color: var(--colorPrimario);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    float: left;
 }
 
 article {
@@ -51,6 +65,7 @@ article {
     padding-bottom: 100%;
     margin-bottom: -100%;
     background-color: var(--colorPrimario);
+    border-radius: 10px;
 }
 
 aside {
@@ -60,28 +75,16 @@ aside {
     display: block;
     padding-bottom: 100%;
     margin-bottom: -100%;
-    color: beige;
-    background-color: rgb(20, 8, 122);
+    background-color: var(--colorPrimario);
+    border-radius: 10px;
 }
 
 section {
     padding-right: 10px;
 }
 
-/*button,
-input,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-    width: 150px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}*/
-
 .formulario {
-    box-sizing: border-box;
+    margin: 20px;
 }
 
 form {
@@ -134,7 +137,7 @@ textarea {
     background-color: #f6f6f6;
     margin: 8px 0;
     /*resize: vertical | horizontal | none | both*/
-    resize: none;
+    resize: vertical;
     display: block;
 }
 
@@ -166,6 +169,7 @@ i {
 }
 
 .container {
+    margin: 5px;
     width: 100%;
     overflow: hidden;
 }
