@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/b07d835587.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/SM.ico">
     <title>Proyecto Codo a Codo</title>
 </head>
 
@@ -21,8 +22,8 @@
         <ul>
             <li class="menu_item"><a href="">Home</a></li>
             <li class="menu_item"><a href="nuestro.html">Nuestro Logo</a></li>
-            <li class="menu_item"><a href="">Nuestras Redes</a></li>
-            <li class="menu_item"><a href="">Contacto</a></li>
+            <li class="menu_item"><a href="#redes">Nuestras Redes</a></li>
+            <li class="menu_item"><a href="#formulario">Contacto</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -64,40 +65,43 @@
             </article>
         </section>
         <aside>
-            <h3>Contacto</h3>
-            <form action="" target="_blank">
 
-                <fieldset>
-
-                    <!-- Ingreso del nombre -->
-                    <label for="nombre">Nombre: </label>
-                    <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui...">
-                    <br><br>
-
-                    <!-- Ingreso del apellido -->
-                    <label for="apellido">Apellido: </label>
-                    <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui...">
-                    <br><br>
-
-                    <!-- Ingreso de la dirección de correo-->
-                    <label for="email">Correo: </label>
-                    <input type="email" name="email">
-                    <br><br>
-
-                    <!-- Comentario -->
-                    <label for="comentario">Comentario:</label><br>
-                    <textarea name="comentario" id="comentario" cols="40" rows="3"></textarea>
-                </fieldset>
-                <br>
-
-                <!-- Botones para controlar el formulario -->
-                <br><br>
-                <input type="reset" value="Borrar formulario">
-                <input type="submit" value="Enviar datos">
-            </form>
         </aside>
     </div>
-    <footer>
+    <div id="formulario" class="formulario">
+        <h2>Contacto</h2>
+        <form action="" target="_blank">
+
+            <fieldset>
+
+                <!-- Ingreso del nombre -->
+                <label for="nombre">Nombre: </label>
+                <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui...">
+                <br><br>
+
+                <!-- Ingreso del apellido -->
+                <label for="apellido">Apellido: </label>
+                <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui...">
+                <br><br>
+
+                <!-- Ingreso de la dirección de correo-->
+                <label for="email">Correo: </label>
+                <input type="email" name="email">
+                <br><br>
+
+                <!-- Comentario -->
+                <label for="comentario">Comentario:</label><br>
+                <textarea name="comentario" id="comentario" cols="80" rows="10"></textarea>
+            </fieldset>
+            <br>
+
+            <!-- Botones para controlar el formulario -->
+            <br><br>
+            <input type="reset" value="Borrar formulario">
+            <input type="submit" value="Enviar datos">
+        </form>
+    </div>
+    <footer id="redes">
         <a href="https://www.behance.net/Sensacrom"><i class="fa-brands fa-behance"></i></a>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
