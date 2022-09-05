@@ -4,50 +4,79 @@
     --colorOscuro: rgb(040, 033, 035);
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
     font-size: 16px;
+    /* 1rem = 10px */
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(040, 033, 035, 30%);
 }
 
 h1,
 h2 {
     text-align: center;
     font-weight: 700;
-    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 p {
     text-align: justify;
     padding: 10px;
     font-weight: 300;
+    font-size: 1.5rem;
 }
 
-header {
-    margin: 0%;
-    padding: 0%;
-    border-radius: 10px;
-}
-
-header img {
+.hero img {
     width: 100vw;
     max-height: 40vw;
+    filter: brightness(0.8);
+
 }
 
-nav {
-    width: 100vw;
+.nav-bg {
     height: 40px;
     border-radius: 10px;
     background-color: var(--colorOscuro);
+
 }
 
-nav a {
-    padding: 60px;
+.navegacion-principal {
+    margin: auto;
+    width: 120rem;
+    background-color: var(--colorOscuro);
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navegacion-principal a {
     text-decoration: none;
     font-weight: 700;
     color: var(--colorPrimario);
+    padding: 1.2rem;
 }
 
-ul {
+.navegacion-principal a:hover {
+    color: var(--colorOscuro);
+    background-color: var(--colorPrimario);
+    background-size: cover;
+}
+
+/* ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -55,17 +84,18 @@ ul {
 
 li {
     float: left;
-}
+} */
 
 article {
     width: 65%;
     height: 100%;
+    margin: 5px 0px;
     float: left;
     display: block;
-    padding-bottom: 100%;
-    margin-bottom: -100%;
     background-color: var(--colorPrimario);
     border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+
 }
 
 aside {
@@ -73,14 +103,14 @@ aside {
     height: 100%;
     float: right;
     display: block;
-    padding-bottom: 100%;
-    margin-bottom: -100%;
     background-color: var(--colorPrimario);
     border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+
 }
 
 section {
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .formulario {
@@ -93,6 +123,7 @@ form {
     border-radius: 10px;
     margin: auto;
     background-color: var(--colorPrimario);
+    box-shadow: 2px 2px 2px;
 }
 
 form label {
@@ -162,14 +193,8 @@ i {
     color: var(--colorPrimario);
 }
 
-.menu_item {
-    float: left;
-    padding: 5px;
-    list-style: none;
-}
-
 .container {
-    margin: 5px;
+    margin: 0;
     width: 100%;
     overflow: hidden;
 }
