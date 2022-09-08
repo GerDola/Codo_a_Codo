@@ -19,7 +19,7 @@ body {
     font-size: 16px;
     /* 1rem = 10px */
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(040, 033, 035, 30%);
+    /* background-color: rgb(040, 033, 035, 30%); */
 }
 
 h1,
@@ -65,7 +65,7 @@ p {
 @media (min-width: 768px) {
     .navegacion-principal {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 }
 
@@ -82,20 +82,9 @@ p {
     background-size: cover;
 }
 
-/* ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    float: left;
-} */
-
-article,
-aside {
+.article {
     height: 100%;
-    margin: 0.5rem 0.5rem;
+    margin: 0.5rem auto;
     padding: 0.5rem;
     background-color: var(--colorPrimario);
     border-radius: 10px;
@@ -104,11 +93,14 @@ aside {
 }
 
 @media (min-width: 768px) {
-    article {
-        width: 65%;
-        float: left;
-        display: block;
+    .contenedor-article {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
 
+    .article {
+        width: 65vw;
     }
 }
 
@@ -122,89 +114,8 @@ aside {
 
 } */
 
-@media (min-width: 768px) {
-    aside {
-        width: 33%;
-        float: right;
-        display: block;
-
-    }
-}
-
-/* section,
-aside {
-    margin-left: 1rem;
-    margin-right: 1rem;
-} */
-
-/* .formulario {
-    margin: 20px;
-} */
-
-form {
-    width: 35rem;
-    padding: 16px;
-    border-radius: 10px;
-    margin: auto;
-    background-color: var(--colorPrimario);
-    box-shadow: 2px 2px 2px;
-    text-align: center;
-}
-
-form label {
-    font-weight: 700;
 
 
-}
-
-form input[type="text"],
-form input[type="email"] {
-    width: 30rem;
-    padding: 3px 10px;
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    /* margin: 8px 0px; */
-    text-align: center;
-}
-
-form input[type="submit"],
-form input[type="reset"] {
-    width: 100%;
-    padding: 8px 16px;
-    margin-top: 32px;
-    border: 1px solid --colorOscuro;
-    border-radius: 5px;
-    display: block;
-    color: var(--colorPrimario);
-    background-color: var(--colorOscuro);
-    font-weight: 700;
-}
-
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
-    cursor: pointer;
-    color: var(--colorOscuro);
-    background-color: var(--colorPrimario);
-    background-size: cover;
-    font-weight: 700;
-}
-
-textarea {
-    width: 100%;
-    border: 1px solid --colorOscuro;
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    margin: 8px 0;
-    /*resize: vertical | horizontal | none | both*/
-    resize: vertical;
-    display: block;
-}
-
-@media (min-width: 768px) {
-    textarea {
-        height: 100px;
-    }
-}
 
 footer {
     width: 100vw;

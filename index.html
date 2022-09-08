@@ -8,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/index_styles.css" as="style">
     <link rel="preload" href="css/normalize.css" as="style">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index_styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/b07d835587.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/SM.ico">
@@ -21,8 +24,10 @@
 <body>
     <!-- Esto es un hero -->
     <div class="container">
-        <header class="hero">
-            <img src="img/hero01-min.webp" alt="Banner Principal Sensacrom" class="opacidad">
+        <header>
+            <div class="hero">
+                <!-- <img src="img/hero01-min.webp" alt="Banner Principal Sensacrom" class="opacidad"> -->
+            </div>
         </header>
     </div>
     <div class="container nav-bg">
@@ -30,62 +35,77 @@
             <a href="index.html">Home</a>
             <a href="nuestro.html">Nuestro Logo</a>
             <a href="#redes">Nuestras Redes</a>
-            <a href="#formulario">Contacto</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </div>
 
     <!-- Esto es el contenido principal. -->
-    <main>
-        <div class="container">
-            <section>
-                <article>
-                    <h2>Introducción</h2>
-                    <p>Somos una marca orientada a brindar diagnósticos y soluciones
-                        gráficas y fotográficas. Somos metódicos, organizados
-                        y rápidos, con un estilo visual inspirado en la señalética,
-                        que busca a traer a potenciales clientes interesados en asesoramiento
-                        y soluciones gráficas.
-                        Apuntamos a una audiencia madura y de nivel adquisitivo
-                        medio-alto, interesados en formar su propia marca o que se
-                        encuentren en búsqueda invertir en su identidad visual.
-                        Nuestro trato pretende ser Formal, Conciso y Amable. La intensión
-                        final de nuestra comunicación visual y verbal pretende
-                        que nuestro cliente se sienta acompañado y motivado en
-                        la creación o renovación de la identidad visual de su marca.</p>
-                </article>
-                <article>
-                    <h2>Color</h2>
-                    <p>A continuación se proveerá la información sobre los colores
-                        marcarios. Estos mismos responde a generar la identidad
-                        visual de la marca y deben ser respetados para la correcta difusión
-                        del contenido comunicacional en todas las piezas que
-                        acompañen a la marca.</p>
-                </article>
-                <article>
-                    <h2>Muchas Gracias</h2>
-                    <p>¡Hemos concluido el recorrido! Espero
-                        les haya resultado tan ameno la lectura
-                        y visualizacion de nuestro proyecto.
-                        Para mas informacion pueden visitar
-                        nuestro Behance donde estaremos
-                        publicando mas contenido.
-                        Saludos atentamente
-                        Nazareno Azul Garibaldi</p>
-                    </p>
-                </article>
-            </section>
-        </div>
-    </main>
+    <div class="contenedor-main">
+        <main>
+            <div class="container">
+                <section class="contenedor-article">
+                    <article class="article">
+                        <h2>Compartiendo Proyectos</h2>
+                        <div class="page-content">
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="title">The Good Place</h2>
+                                    <p class="copy">Visitamos un nuevo Resto Bar situado en el barrio de
+                                        Temperley. Situado en la calle 25 de Mayo 155.</p>
+                                    <button class="btn">Visitar</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="title">BRIUX Café</h2>
+                                    <p class="copy">Una experiencia distinta te espera en Avenida Briux 4199, CABA.</p>
+                                    <button class="btn">Visitar</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="title">Flyer Schweppes</h2>
+                                    <p class="copy">Preparamos una propuesta para una marca reconocida de gaseosa.</p>
+                                    <button class="btn">Ver más</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <h2 class="title">Stella Noir</h2>
+                                    <p class="copy">Una bebida galardonada por su sabor y compromiso con grandes ONG,
+                                        siempre a la vanguardia.</p>
+                                    <button class="btn">Ver más</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Somos una marca orientada a brindar diagnósticos y soluciones
+                            gráficas y fotográficas. Somos metódicos, organizados
+                            y rápidos, con un estilo visual inspirado en la señalética,
+                            que busca a traer a potenciales clientes interesados en asesoramiento
+                            y soluciones gráficas.
+                            Apuntamos a una audiencia madura y de nivel adquisitivo
+                            medio-alto, interesados en formar su propia marca o que se
+                            encuentren en búsqueda invertir en su identidad visual.
+                            Nuestro trato pretende ser Formal, Conciso y Amable. La intensión
+                            final de nuestra comunicación visual y verbal pretende
+                            que nuestro cliente se sienta acompañado y motivado en
+                            la creación o renovación de la identidad visual de su marca.</p>
+                    </article>
 
-    <!-- Esto es un aside/contenido lateral. -->
-    <aside>
-        <h2>Marca en Acción</h2>
-        <p>En esta sección se presentara piezas gráficas que muestran
-            a la marca en acción y posteriormente podran ver un breve
-            resumen de nuestro portafolio de trabajos mas relevantes
-            que hemos ido desepeñando a lo largo del ultimo periodo.
-            ¡Esperamos sea de su agrado!</p>
-    </aside>
+                </section>
+            </div>
+        </main>
+
+        <!-- Esto es un aside/contenido lateral. -->
+        <aside class="aside">
+            <h2>Marca en Acción</h2>
+            <p>En esta sección se presentara piezas gráficas que muestran
+                a la marca en acción y posteriormente podran ver un breve
+                resumen de nuestro portafolio de trabajos mas relevantes
+                que hemos ido desepeñando a lo largo del ultimo periodo.
+                ¡Esperamos sea de su agrado!</p>
+        </aside>
+    </div>
 
     <!-- Esto es un formulario de contacto. -->
     <div id="formulario" class="formulario">
@@ -108,7 +128,7 @@
 
             <!-- Comentario -->
             <label for="comentario">Comentario</label><br>
-            <textarea name="comentario" id="comentario" cols="80" rows="10"></textarea>
+            <textarea class="comentario" name="comentario" id="comentario" cols="80" rows="10"></textarea>
 
             <!-- Botones para controlar el formulario -->
             <input type="reset" value="Borrar formulario">

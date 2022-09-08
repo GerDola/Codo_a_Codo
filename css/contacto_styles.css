@@ -1,0 +1,209 @@
+/* Globales */
+:root {
+    --colorPrimario: rgb(252, 202, 047);
+    --colorOscuro: rgb(040, 033, 035);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    /* 1rem = 10px */
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rgb(040, 033, 035, 30%); */
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.hero img {
+    width: 100vw;
+    max-height: 40vw;
+    filter: brightness(0.8);
+
+}
+
+.nav-bg {
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--colorOscuro);
+
+}
+
+.navegacion-principal {
+    margin: auto;
+    width: auto;
+    background-color: var(--colorOscuro);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.navegacion-principal a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorPrimario);
+    padding: 1.2rem;
+}
+
+.navegacion-principal a:hover {
+    color: var(--colorOscuro);
+    background-color: var(--colorPrimario);
+    background-size: cover;
+}
+
+.article {
+    height: 100%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    background-color: var(--colorPrimario);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+
+}
+
+@media (min-width: 768px) {
+    .contenedor-article {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .article {
+        width: 65vw;
+    }
+}
+
+/* aside {
+    height: 100%;
+    margin: 5px 0px;
+    padding: 0.5rem;
+    background-color: var(--colorPrimario);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+
+} */
+
+form {
+    width: 35rem;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--colorPrimario);
+    box-shadow: 2px 2px 2px;
+    text-align: center;
+}
+
+form label {
+    font-weight: 700;
+
+
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 30rem;
+    padding: 3px 10px;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    /* margin: 8px 0px; */
+    text-align: center;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid --colorOscuro;
+    border-radius: 5px;
+    display: block;
+    color: var(--colorPrimario);
+    background-color: var(--colorOscuro);
+    font-weight: 700;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    cursor: pointer;
+    color: var(--colorOscuro);
+    background-color: var(--colorPrimario);
+    background-size: cover;
+    font-weight: 700;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid --colorOscuro;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    /*resize: vertical | horizontal | none | both*/
+    resize: vertical;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    textarea {
+        height: 100px;
+    }
+}
+
+
+footer {
+    width: 100vw;
+    height: 100px;
+    margin-top: 0.5rem;
+    float: left;
+    text-align: center;
+    display: block;
+    color: var(--colorPrimario);
+    background-color: var(--colorOscuro);
+}
+
+footer p {
+    text-align: center;
+    font-size: small;
+
+}
+
+i {
+    padding: 10px;
+    color: var(--colorPrimario);
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}

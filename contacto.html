@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/contacto_styles.css" as="style">
+    <link rel="preload" href="css/normalize.css" as="style">
+
+    <link rel="stylesheet" href="css/contacto_styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/b07d835587.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/SM.ico">
+    <title>Nuestro Logo</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="hero">
+            <img src="img/hero01-min.webp" alt="Banner Principal Sensacrom" class="opacidad">
+        </header>
+    </div>
+    <main>
+        <div class="container nav-bg">
+            <nav class="navegacion-principal">
+                <a href="index.html">Home</a>
+                <a href="nuestro.html">Nuestro Logo</a>
+                <a href="#redes">Nuestras Redes</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <div class="container">
+            <section class="contenedor-article">
+                <article class="article">
+                    <h2>Escribinos</h2>
+                    <p>Podes cominucarte con nosotros dejándonos un mensaje.</p>
+                </article>
+            </section>
+        </div>
+
+        <!-- Esto es un formulario de contacto. -->
+        <div id="formulario" class="formulario">
+            <form action="#" target="_blank">
+                <h2>Contacto</h2>
+                <!-- Ingreso del nombre -->
+                <label for="nombre">Nombre</label>
+                <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aquí...">
+                <br><br>
+
+                <!-- Ingreso del apellido -->
+                <label for="apellido">Apellido</label>
+                <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aquí...">
+                <br><br>
+
+                <!-- Ingreso de la dirección de correo-->
+                <label for="email">Correo</label>
+                <input type="email" name="email" placeholder="Ingrese su dirección de correo...">
+                <br><br>
+
+                <!-- Comentario -->
+                <label for="comentario">Comentario</label><br>
+                <textarea name="comentario" id="comentario" cols="80" rows="10"></textarea>
+
+                <!-- Botones para controlar el formulario -->
+                <input type="reset" value="Borrar formulario">
+                <input type="submit" value="Enviar datos">
+            </form>
+        </div>
+
+    </main>
+    <div class="container">
+        <footer id="redes">
+            <a href="https://www.behance.net/Sensacrom"><i class="fa-brands fa-behance"></i></a>
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://www.instagram.com/sensacrom_estudio/"><i class="fa-brands fa-instagram"></i></a>
+            <p>&copy; Sensacrom, todos los derechos reservados.<br>Desarrollado por Germán Dolagaray 2022.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
