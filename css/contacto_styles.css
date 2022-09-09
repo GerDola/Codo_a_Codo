@@ -114,6 +114,8 @@ p {
 
 } */
 
+/* Formulario de Contacto */
+
 form {
     width: 35rem;
     padding: 16px;
@@ -168,7 +170,6 @@ textarea {
     border-radius: 3px;
     background-color: #f6f6f6;
     margin: 8px 0;
-    /*resize: vertical | horizontal | none | both*/
     resize: vertical;
     display: block;
 }
@@ -176,6 +177,23 @@ textarea {
 @media (min-width: 768px) {
     textarea {
         height: 100px;
+    }
+
+    form {
+        width: 60rem;
+        padding: 16px;
+        text-align: center;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+        width: 40%;
+        padding: 8px 16px;
+        margin: 32px auto;
+    }
+
+    .comentario {
+        height: 30rem;
     }
 }
 
