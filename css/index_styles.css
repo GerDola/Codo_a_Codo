@@ -44,10 +44,12 @@ p {
 }
 
 .hero {
-    background-image: url(../img/hero01-min.webp);
-    background-repeat: no;
+    display: flex;
     width: 100vw;
-    max-height: 40vw;
+    height: 300px;
+    background-image: url(../img/hero01-min.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     filter: brightness(0.8);
 
 }
@@ -95,16 +97,6 @@ p {
     background-size: cover;
 }
 
-/* ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-li {
-    float: left;
-} */
-
 .article,
 .aside {
     height: 100%;
@@ -124,16 +116,6 @@ li {
     }
 }
 
-/* aside {
-    height: 100%;
-    margin: 5px 0px;
-    padding: 0.5rem;
-    background-color: var(--colorPrimario);
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px;
-
-} */
-
 @media (min-width: 768px) {
     .aside {
         float: right;
@@ -148,15 +130,7 @@ li {
     }
 }
 
-/* section,
-aside {
-    margin-left: 1rem;
-    margin-right: 1rem;
-} */
-
-/* .formulario {
-    margin: 20px;
-} */
+/* Formulario de Contacto */
 
 form {
     width: 35rem;
@@ -180,7 +154,6 @@ form input[type="email"] {
     padding: 3px 10px;
     border-radius: 3px;
     background-color: #f6f6f6;
-    /* margin: 8px 0px; */
     text-align: center;
 }
 
