@@ -2,11 +2,14 @@
 :root {
     --colorPrimario: rgb(252, 202, 047);
     --colorOscuro: rgb(040, 033, 035);
+    --font-sans: 'Rubik', sans-serif;
+    --font-roboto: "Roboto", sans-serif;
 }
 
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -18,8 +21,7 @@ html {
 body {
     font-size: 16px;
     /* 1rem = 10px */
-    font-family: 'Roboto', sans-serif;
-    /* background-color: rgb(040, 033, 035, 30%); */
+    font-family: var(--font-roboto);
 }
 
 h1,
@@ -39,13 +41,59 @@ p {
     font-size: 1.5rem;
 }
 
-.hero img {
+i {
+    padding: 10px;
+    color: var(--colorPrimario);
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Hero */
+.hero {
+    display: flex;
     width: 100vw;
-    max-height: 40vw;
+    height: 300px;
+    background-image: url(../img/hero01-min.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     filter: brightness(0.8);
 
 }
 
+@media (min-width: 1280) {
+    .hero {
+        width: 100vw;
+        height: 50px;
+    }
+}
+
+
+/* Logo flotante */
+.flotante {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--colorOscuro);
+    position: fixed;
+}
+
+.logo:hover {
+    filter: brightness(0.5);
+}
+
+/* Barra de navegación */
 .nav-bg {
     height: auto;
     border-radius: 10px;
@@ -82,6 +130,7 @@ p {
     background-size: cover;
 }
 
+/* Contenido principal.*/
 .article {
     height: 100%;
     margin: 0.5rem auto;
@@ -104,18 +153,7 @@ p {
     }
 }
 
-/* aside {
-    height: 100%;
-    margin: 5px 0px;
-    padding: 0.5rem;
-    background-color: var(--colorPrimario);
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px;
-
-} */
-
 /* Formulario de Contacto */
-
 form {
     width: 35rem;
     padding: 16px;
@@ -197,7 +235,7 @@ textarea {
     }
 }
 
-
+/* Footer */
 footer {
     width: 100vw;
     height: 100px;
@@ -213,15 +251,4 @@ footer p {
     text-align: center;
     font-size: small;
 
-}
-
-i {
-    padding: 10px;
-    color: var(--colorPrimario);
-}
-
-.container {
-    margin: 0;
-    width: 100%;
-    overflow: hidden;
 }

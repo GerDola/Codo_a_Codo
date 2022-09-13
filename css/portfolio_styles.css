@@ -2,8 +2,6 @@
 :root {
     --colorPrimario: rgb(252, 202, 047);
     --colorOscuro: rgb(040, 033, 035);
-    --font-sans: 'Rubik', sans-serif;
-    --font-roboto: "Roboto", sans-serif;
 }
 
 html {
@@ -21,7 +19,8 @@ html {
 body {
     font-size: 16px;
     /* 1rem = 10px */
-    font-family: var(--font-roboto);
+    font-family: 'Roboto', sans-serif;
+    /* background-color: rgb(040, 033, 035, 30%); */
 }
 
 h1,
@@ -52,25 +51,6 @@ i {
     overflow: hidden;
 }
 
-/* Hero */
-.hero {
-    display: flex;
-    width: 100vw;
-    height: 300px;
-    background-image: url(../img/hero01-min.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.8);
-
-}
-
-@media (min-width: 1280) {
-    .hero {
-        width: 100vw;
-        height: 50px;
-    }
-}
-
 /* Logo flotante */
 .flotante {
     display: flex;
@@ -92,7 +72,26 @@ i {
     filter: brightness(0.5);
 }
 
-/* Barra de navegación. */
+/* Hero */
+.hero {
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    background-image: url(../img/hero01-min.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+
+}
+
+@media (min-width: 1280) {
+    .hero {
+        width: 100vw;
+        height: 50px;
+    }
+}
+
+/* Barra de navegación */
 .nav-bg {
     height: auto;
     border-radius: 10px;
@@ -129,7 +128,7 @@ i {
     background-size: cover;
 }
 
-/* Contenido principal. */
+/* Contenido principal */
 .article {
     height: 100%;
     margin: 0.5rem auto;
@@ -150,6 +149,94 @@ i {
     .article {
         width: 65vw;
     }
+}
+
+/* Galeria */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 10px;
+    overflow: hidden;
+}
+
+.galeria>a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.galeria img {
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria a:hover img {
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box img {
+    max-width: 85vw;
+    max-height: 85vh;
+
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+.cerrar {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: var(--colorOscuro);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.siguiente {
+    display: flex;
+    top: 40px;
+    right: 40px;
+    background-color: var(--colorOscuro);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+
+.parrafo {
+    display: flex;
+    justify-content: center;
 }
 
 /* Footer */

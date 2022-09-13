@@ -11,6 +11,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -23,7 +24,6 @@ body {
     font-size: 16px;
     /* 1rem = 10px */
     font-family: var(--font-roboto);
-    /* background-color: rgb(040, 033, 035, 30%); */
 }
 
 h1,
@@ -43,6 +43,18 @@ p {
     font-size: 1.5rem;
 }
 
+i {
+    padding: 10px;
+    color: var(--colorPrimario);
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Hero */
 .hero {
     display: flex;
     width: 100vw;
@@ -61,6 +73,28 @@ p {
     }
 }
 
+/* Logo flotante */
+.flotante {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--colorOscuro);
+    position: fixed;
+}
+
+.logo:hover {
+    filter: brightness(0.5);
+}
+
+/* Barra de navegación */
 .nav-bg {
     height: auto;
     border-radius: 10px;
@@ -97,6 +131,7 @@ p {
     background-size: cover;
 }
 
+/* Contenido principal */
 .article,
 .aside {
     height: 100%;
@@ -130,119 +165,7 @@ p {
     }
 }
 
-/* Formulario de Contacto */
-
-form {
-    width: 35rem;
-    padding: 16px;
-    border-radius: 10px;
-    margin: auto;
-    background-color: var(--colorPrimario);
-    box-shadow: 2px 2px 2px;
-    text-align: center;
-}
-
-form label {
-    font-weight: 700;
-
-
-}
-
-form input[type="text"],
-form input[type="email"] {
-    width: 30rem;
-    padding: 3px 10px;
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    text-align: center;
-}
-
-form input[type="submit"],
-form input[type="reset"] {
-    width: 100%;
-    padding: 8px 16px;
-    margin-top: 32px;
-    border: 1px solid --colorOscuro;
-    border-radius: 5px;
-    display: block;
-    color: var(--colorPrimario);
-    background-color: var(--colorOscuro);
-    font-weight: 700;
-}
-
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
-    cursor: pointer;
-    color: var(--colorOscuro);
-    background-color: var(--colorPrimario);
-    background-size: cover;
-    font-weight: 700;
-}
-
-textarea {
-    width: 100%;
-    border: 1px solid --colorOscuro;
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    margin: 8px 0;
-    resize: vertical;
-    display: block;
-}
-
-@media (min-width: 768px) {
-    textarea {
-        height: 100px;
-    }
-
-    form {
-        width: 60rem;
-        padding: 16px;
-        text-align: center;
-    }
-
-    form input[type="submit"],
-    form input[type="reset"] {
-        width: 40%;
-        padding: 8px 16px;
-        margin: 32px auto;
-    }
-
-    .comentario {
-        height: 30rem;
-    }
-}
-
-footer {
-    width: 100vw;
-    height: 100px;
-    margin-top: 0.5rem;
-    float: left;
-    text-align: center;
-    display: block;
-    color: var(--colorPrimario);
-    background-color: var(--colorOscuro);
-}
-
-footer p {
-    text-align: center;
-    font-size: small;
-
-}
-
-i {
-    padding: 10px;
-    color: var(--colorPrimario);
-}
-
-.container {
-    margin: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-
 /* Cartas Flotantes */
-
 .page-content {
     display: grid;
     grid-gap: 1rem;
@@ -292,7 +215,7 @@ i {
     width: 100%;
     height: 110%;
     background-size: cover;
-    background-position: 0 0;
+    background-position: center;
     transition: transform calc(var(--d) * 1.5) var(--e);
     pointer-events: none;
 }
@@ -312,7 +235,7 @@ i {
 }
 
 .card:nth-child(1):before {
-    background-image: url(../img/the_good_place/_DSC1850-min.jpg);
+    background-image: url(../img/the_good_place/18.jpg);
 }
 
 .card:nth-child(2):before {
@@ -427,4 +350,101 @@ i {
     .card:focus-within .content>*:not(.title) {
         transition-duration: 0s;
     }
+}
+
+/* Formulario de Contacto */
+form {
+    width: 35rem;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--colorPrimario);
+    box-shadow: 2px 2px 2px;
+    text-align: center;
+}
+
+form label {
+    font-weight: 700;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 30rem;
+    padding: 3px 10px;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid --colorOscuro;
+    border-radius: 5px;
+    display: block;
+    color: var(--colorPrimario);
+    background-color: var(--colorOscuro);
+    font-weight: 700;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    cursor: pointer;
+    color: var(--colorOscuro);
+    background-color: var(--colorPrimario);
+    background-size: cover;
+    font-weight: 700;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid --colorOscuro;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    resize: vertical;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    textarea {
+        height: 100px;
+    }
+
+    form {
+        width: 60rem;
+        padding: 16px;
+        text-align: center;
+    }
+
+    form input[type="submit"],
+    form input[type="reset"] {
+        width: 40%;
+        padding: 8px 16px;
+        margin: 32px auto;
+    }
+
+    .comentario {
+        height: 30rem;
+    }
+}
+
+/* Footer */
+footer {
+    width: 100vw;
+    height: 100px;
+    margin-top: 0.5rem;
+    float: left;
+    text-align: center;
+    display: block;
+    color: var(--colorPrimario);
+    background-color: var(--colorOscuro);
+}
+
+footer p {
+    text-align: center;
+    font-size: small;
+
 }
