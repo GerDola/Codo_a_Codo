@@ -134,6 +134,7 @@ i {
     color: var(--colorOscuro);
     background-color: var(--colorPrimario);
     background-size: cover;
+    transition: 0.3s;
 }
 
 /* Contenido principal.*/
