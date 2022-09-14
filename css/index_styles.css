@@ -54,6 +54,29 @@ i {
     overflow: hidden;
 }
 
+/* Logo flotante */
+.flotante {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--colorOscuro);
+    position: fixed;
+}
+
+.logo:hover {
+    filter: brightness(0.5);
+    transform: rotate(10deg) scale(1.3);
+    transition: transform 0.5s;
+}
+
 /* Hero */
 .hero {
     display: flex;
@@ -71,27 +94,6 @@ i {
         width: 100vw;
         height: 50px;
     }
-}
-
-/* Logo flotante */
-.flotante {
-    display: flex;
-    margin-top: 5px;
-    margin-left: 10px;
-    position: fixed;
-    z-index: 100;
-}
-
-.logo {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: var(--colorOscuro);
-    position: fixed;
-}
-
-.logo:hover {
-    filter: brightness(0.5);
 }
 
 /* Barra de navegación */
@@ -181,7 +183,7 @@ i {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1248px) {
     .page-content {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -239,11 +241,11 @@ i {
 }
 
 .card:nth-child(2):before {
-    background-image: url(../img/briux/IMG_7416-min.jpg);
+    background-image: url(../img/briux/01.jpg);
 }
 
 .card:nth-child(3):before {
-    background-image: url(../img/shweppes/Desafio-min.jpg);
+    background-image: url(../img/schweppes/01.jpg);
 }
 
 .card:nth-child(4):before {
