@@ -48,6 +48,10 @@ i {
     color: var(--colorPrimario);
 }
 
+.bold{
+    font-weight: 700;
+}
+
 .container {
     margin: 0;
     width: 100%;
