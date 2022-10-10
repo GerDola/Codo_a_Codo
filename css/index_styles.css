@@ -298,6 +298,7 @@ i {
 .btn:hover {
     background-color: var(--colorPrimario);
     color: var(--colorOscuro);
+    transition: 0.3s;
 }
 
 .btn:focus {

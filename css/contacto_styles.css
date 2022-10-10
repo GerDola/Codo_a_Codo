@@ -206,6 +206,7 @@ form input[type="reset"]:hover {
     background-color: var(--colorPrimario);
     background-size: cover;
     font-weight: 700;
+    transition: 0.3s;
 }
 
 textarea {
