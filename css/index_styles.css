@@ -155,6 +155,13 @@ i {
     border-radius: 5px;
 }
 
+@media (max-width: 360px) {
+    .iframe{
+        width: 250px;
+        height: 250px;
+    }
+}
+
 @media (min-width: 768px) {
     .article {
         float: left;
