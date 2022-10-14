@@ -144,7 +144,7 @@ i {
 /* Contenido principal. */
 .article {
     height: 100%;
-    margin: 0.5rem auto;
+    margin: 0.5rem 0.5rem;
     padding: 0.5rem;
     background-color: var(--colorPrimario);
     border-radius: 10px;
@@ -156,7 +156,7 @@ i {
     .contenedor-article {
         display: flex;
         flex-direction: column;
-        align-content: space-around;
+        align-items: center;
     }
 
     .article {

@@ -28,7 +28,7 @@
             <div class="hero"></div>
         </header>
     </div>
-    <main>
+    <main class="main">
         <!-- Esto es una barra de navegación -->
         <div class="container nav-bg">
             <nav class="navegacion-principal">
@@ -50,48 +50,91 @@
         </div>
 
         <!-- Esto es un formulario de contacto. -->
-        <div id="formulario" class="formulario">
-            <form action="#" target="_blank">
-                <h2 class="titulos">Contacto</h2>
+        <div class="form">
+            <h2 class="titulos">Contacto</h2>
+            <form action="" target="_blank" class="formulario" id="formulario">
                 <!-- Ingreso del nombre -->
-                <label for="nombre">Nombre</label>
-                <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aquí...">
-                <br><br>
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input size="30" type="text" class="formulario__input" name="nombre" id="nombre"
+                            placeholder="Ingrese su nombre aquí...">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Complete el campo sin caracteres especiales ni números.</p>
+                </div>
 
                 <!-- Ingreso del apellido -->
-                <label for="apellido">Apellido</label>
-                <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aquí...">
-                <br><br>
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido</label>
+                    <div class="formulario__grupo-input">
+                        <input size="30" type="text" class="formulario__input" name="apellido" id="apellido"
+                            placeholder="Ingrese su apellido aquí...">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Complete el campo sin caracteres especiales ni números.</p>
+                </div>
 
                 <!-- Ingreso del teléfono -->
-                <label for="apellido">Teléfono</label>
-                <input size="30" type="text" name="telefono" placeholder="Ingrese su número aquí...">
-                <br><br>
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input size="14" type="text" class="formulario__input" name="telefono" id="telefono"
+                            placeholder="Ingrese su número aquí...">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Ingrese solamente numeros, máximo 14 caracteres.</p>
+                </div>
 
                 <!-- Ingreso de la dirección de correo-->
-                <label for="email">Correo</label>
-                <input type="email" name="email" placeholder="Ingrese su dirección de correo...">
-                <br><br>
+                <div class="formulario__grupo" id="grupo__email">
+                    <label for="email" class="formulario__label">Correo</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" name="email" class="formulario__input" id="email"
+                            placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Ingrese un formato valido.</p>
+                </div>
 
                 <!-- Comentario -->
-                <label for="comentario">Comentario</label><br>
-                <textarea class="comentario" name="comentario" id="comentario" cols="80" rows="10"></textarea>
+                <label for="comentario" class="formulario__label">Comentario</label>
+                <textarea class="comentario" name="comentario" id="comentario" cols="80" rows="10"
+                    placeholder="Escriba aquí su mensaje..."></textarea>
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i>Complete correctamente el formulario.</p>
+                </div>
 
-                <!-- Botones para controlar el formulario -->
-                <input type="reset" value="Borrar formulario">
-                <input type="submit" value="Enviar datos">
+                <!-- Boton para borrar el formulario -->
+                <!-- <div class="formulario__grupo formulario__btn-borrar">
+                    <button type="reset" class="formulario__btn">Borrar formulario</button>
+                </div> -->
+
+                <!-- Boton para enviar el formulario -->
+                <!-- <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                        correctamente. </p>
+                </div> -->
+
+                <div class="formulario__grupo formulario__btn-enviar">
+                    <button type="submit" class="formulario__btn" id="refresh">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
+                    </p>
+                </div>
             </form>
         </div>
 
     </main>
     <div class="container">
         <footer id="redes">
-            <a href="https://www.behance.net/Sensacrom"><i class="fa-brands fa-behance"></i></a>
-            <i class="fa-brands fa-facebook"></i>
-            <a href="https://www.instagram.com/sensacrom_estudio/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.behance.net/Sensacrom"><i class="redes fa-brands fa-behance"></i></a>
+            <i class="redes fa-brands fa-facebook"></i>
+            <a href="https://www.instagram.com/sensacrom_estudio/"><i class="redes fa-brands fa-instagram"></i></a>
             <p>&copy; Sensacrom, todos los derechos reservados.<br>Desarrollado por Germán Dolagaray 2022.</p>
         </footer>
     </div>
+
+    <script src="js/formulario.js"></script>
 
 </body>
 

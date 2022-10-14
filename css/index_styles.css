@@ -164,17 +164,31 @@ i {
 
 @media (min-width: 768px) {
     .article {
+        margin: 0.5rem 5rem;
+
+    }
+    .aside {
+        margin: 0.5rem 5rem;
+    }
+
+    /* .contenedor-main {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    } */
+}
+
+@media (min-width: 1024px) {
+    .article {
+        margin: 0.5rem 1rem;
         float: left;
         display: block;
 
     }
-}
-
-@media (min-width: 768px) {
     .aside {
+        margin: 0.5rem 1rem;
         float: right;
         display: block;
-
     }
 
     .contenedor-main {
@@ -183,6 +197,29 @@ i {
         align-content: center;
     }
 }
+
+@media (min-width: 1920px) {
+    .article {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .aside {
+        margin-right: 3rem;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .aside {
+        float: right;
+        display: block;
+    }
+
+    .contenedor-main {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+} */
 
 /* Cartas Flotantes */
 .page-content {
