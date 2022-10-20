@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -143,18 +143,51 @@
         </main>
 
         <!-- Esto es un aside/contenido lateral. -->
-        <aside class="aside">
-            <h2>Donde Encontrarnos</h2>
-            <p>Actualmente estamos hubicados en la cercania a la zona de la estación de trenes de la localidad de
-                Temperley,
-                Buenos
-                Aires.</p>
-            <iframe class="iframe"
-                src="
+        <div class="contenedor-aside">
+            <aside class="aside galeria">
+                <div>
+                    <div class="header">
+                        <h2>Inspírese con el Mundo</h2>
+                        <p>En caso de estar buscando inspiración, ponemos a su disposición imagenes del sitio web
+                            <span class="bold">Pexels</span>. Allí encontrará una vasta colección de fotos y videos
+                            compartidos por una
+                            gran
+                            comunidad de fotógrafos de todo el mundo. Pueden hacer uso de nuestra herramienta de
+                            busqueda, o ingresar directamente al sitio desde este link:
+                            <a class="pexels" href="https://www.pexels.com">Photos
+                                provided by Pexels</a>
+                        </p>
+                        <form class="form">
+                            <input class="input" type="text" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </div>
+                    <div class="gallery">
+
+                    </div>
+                    <div class="contenedor__load-more">
+                        <a class="load-more" data-img="curated" target="_blank">ver más</a>
+                    </div>
+                </div>
+            </aside>
+
+            <script src="./js/galeriaExterna.js"></script>
+
+            <aside class="aside">
+                <h2>Donde Encontrarnos</h2>
+                <p>Actualmente estamos hubicados en la cercania a la zona de la estación de trenes de la localidad de
+                    Temperley,
+                    Buenos
+                    Aires.</p>
+                <iframe class="iframe"
+                    src="
                 https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13108.799725079778!2d-58.413206934928894!3d-34.77574181223626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2e723adc31f%3A0x7dcedd64812c55df!2sTemperley!5e0!3m2!1ses-419!2sar!4v1665412567084!5m2!1ses-419!2sar"
-                width="auto" height="auto"></iframe>
-        </aside>
+                    width="auto" height="auto"></iframe>
+            </aside>
+        </div>
     </div>
+
+
 
     <!-- Esto es el Footer con links a redes. -->
     <div class="container">
