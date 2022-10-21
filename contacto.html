@@ -52,13 +52,14 @@
         <!-- Esto es un formulario de contacto. -->
         <div class="form">
             <h2 class="titulos">Contacto</h2>
-            <form action="" target="_blank" class="formulario" id="formulario">
+            <form action="https://formsubmit.co/93114c2eba03be51002ae76c48612b3b" method="POST" target=""
+                class="formulario" id="formulario">
                 <!-- Ingreso del nombre -->
                 <div class="formulario__grupo" id="grupo__nombre">
                     <label for="nombre" class="formulario__label">Nombre</label>
                     <div class="formulario__grupo-input">
                         <input size="30" type="text" class="formulario__input" name="nombre" id="nombre"
-                            placeholder="Ingrese su nombre aquí...">
+                            placeholder="Ingrese su nombre aquí..." required>
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input-error">Complete el campo sin caracteres especiales ni números.</p>
@@ -69,7 +70,7 @@
                     <label for="apellido" class="formulario__label">Apellido</label>
                     <div class="formulario__grupo-input">
                         <input size="30" type="text" class="formulario__input" name="apellido" id="apellido"
-                            placeholder="Ingrese su apellido aquí...">
+                            placeholder="Ingrese su apellido aquí..." required>
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input-error">Complete el campo sin caracteres especiales ni números.</p>
@@ -80,7 +81,7 @@
                     <label for="telefono" class="formulario__label">Teléfono</label>
                     <div class="formulario__grupo-input">
                         <input size="14" type="text" class="formulario__input" name="telefono" id="telefono"
-                            placeholder="Ingrese su número aquí...">
+                            placeholder="Ingrese su número aquí..." required>
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input-error">Ingrese solamente numeros, máximo 14 caracteres.</p>
@@ -91,7 +92,7 @@
                     <label for="email" class="formulario__label">Correo</label>
                     <div class="formulario__grupo-input">
                         <input type="email" name="email" class="formulario__input" id="email"
-                            placeholder="correo@correo.com">
+                            placeholder="correo@correo.com" required>
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                     </div>
                     <p class="formulario__input-error">Ingrese un formato valido.</p>
@@ -100,11 +101,14 @@
                 <!-- Comentario -->
                 <label for="comentario" class="formulario__label">Comentario</label>
                 <textarea class="comentario" name="comentario" id="comentario" cols="80" rows="10"
-                    placeholder="Escriba aquí su mensaje..."></textarea>
+                    placeholder="Escriba aquí su mensaje..." required></textarea>
                 <div class="formulario__mensaje" id="formulario__mensaje">
                     <p><i class="fa-solid fa-triangle-exclamation"></i>Complete correctamente el formulario.</p>
                 </div>
+
+                <!-- Boton Enviar -->
                 <div class="formulario__grupo formulario__btn-enviar">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
                     <button type="submit" class="formulario__btn" id="refresh">Enviar</button>
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
                     </p>

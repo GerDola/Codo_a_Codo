@@ -92,7 +92,7 @@ i {
 .hero {
     display: flex;
     width: 100vw;
-    height: 300px;
+    height: 200px;
     background-image: url(../img/hero01-min.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,10 +100,15 @@ i {
 
 }
 
-@media (min-width: 1280) {
+@media (min-width: 1280px) {
     .hero {
-        width: 100vw;
-        height: 50px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 150px;
     }
 }
 
@@ -266,6 +271,7 @@ i {
     padding: 0 15px;
     border-radius: 3px;
     display: none;
+    
 }
 
 .formulario__mensaje-activo{
@@ -273,6 +279,7 @@ i {
 }
 
 .formulario__mensaje p{
+    text-align: center;
     margin: 0;
     padding: 0;
     font-weight: 700;

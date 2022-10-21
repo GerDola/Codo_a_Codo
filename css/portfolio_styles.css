@@ -87,10 +87,15 @@ i {
 
 }
 
-@media (min-width: 1280) {
+@media (min-width: 1280px) {
     .hero {
-        width: 100vw;
-        height: 50px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 150px;
     }
 }
 

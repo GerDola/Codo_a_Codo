@@ -63,11 +63,10 @@ inputs.forEach((input) => {
 
 let refresh = document.getElementById('refresh');
 
-formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
+formulario.addEventListener('submit', (event) => {
+    //event.preventDefault();
 
     if (campos.nombre && campos.apellido && campos.telefono && campos.email) {
-        formulario.reset();
 
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
         setTimeout(() => {
@@ -76,15 +75,21 @@ formulario.addEventListener('submit', (e) => {
             refresh.addEventListener('click', _ => {
                 location.reload();
             });
-        }, 5000);
+        }, 10000);
 
         document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
             icono.classList.remove('formulario__grupo-correcto');
         });
+        // setTimeout(() => {
+        //     formulario.reset();
+        // }, 20000);
+
     } else {
         document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
         setTimeout(() => {
             document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
-        }, 5000);
+        }, 10000);
+
+        event.preventDefault();
     }
 });
