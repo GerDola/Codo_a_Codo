@@ -382,5 +382,8 @@ footer {
 footer p {
     text-align: center;
     font-size: small;
+}
 
+footer i{
+    color: var(--colorPrimario);
 }
