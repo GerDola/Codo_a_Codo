@@ -11,7 +11,7 @@ Paleta de colores elegida:
 
 Transiciones: se aplicó transiciones al logo ubicado en la parte superior izquierda, a las tarjetas principales y a las imagenes en las galerias.
 
-Posee validacion de los campos del formulario de contacto mediante expresiones regulares JavaScript
+Posee validacion de los campos del formulario de contacto por JavaScript.
 
 Consumo de API utilizado para la sección 'Inspírese con el Mundo' proveída por el sitio www.pexels.com
 
